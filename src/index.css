@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Syne:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  /* Base — soft dark navy, not pitch black */
+  --bg:        #0F1117;
+  --bg2:       #13161F;
+  --bg3:       #181C27;
+  --card:      #1E2235;
+  --card2:     #242840;
+
+  /* Borders — subtle, not harsh */
+  --line:      rgba(255,255,255,0.06);
+  --line2:     rgba(255,255,255,0.10);
+
+  /* Accent palette — warm & vibrant */
+  --indigo:    #6C63FF;
+  --violet:    #9B8FFF;
+  --coral:     #FF6B6B;
+  --amber:     #FFB547;
+  --mint:      #4ECDC4;
+  --rose:      #FF8FA3;
+
+  /* Text */
+  --t1:        #F0F2FF;
+  --t2:        #9BA3C0;
+  --t3:        #4F566B;
+
+  /* Gradients */
+  --g-main:    linear-gradient(135deg, #6C63FF 0%, #9B8FFF 100%);
+  --g-warm:    linear-gradient(135deg, #FF6B6B 0%, #FFB547 100%);
+  --g-cool:    linear-gradient(135deg, #4ECDC4 0%, #6C63FF 100%);
+  --g-card:    linear-gradient(135deg, rgba(108,99,255,0.08) 0%, rgba(155,143,255,0.04) 100%);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--bg);
+  color: var(--t1);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+::selection { background: rgba(108,99,255,0.4); color: #fff; }
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--indigo); border-radius: 99px; }
+
+/* Global gradient text class */
+.grad-text {
+  background: linear-gradient(135deg, #6C63FF 0%, #9B8FFF 50%, #FF6B6B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.grad-cool {
+  background: linear-gradient(135deg, #4ECDC4 0%, #6C63FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
